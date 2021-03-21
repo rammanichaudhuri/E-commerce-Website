@@ -1,0 +1,27 @@
+.basket_div{
+  margin-top: 180px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.basket_items{
+  margin: 3em;
+  border: 1px solid black;
+  text-align: center;
+  padding: 1.5em;
+}
+
+.plus, .minus{
+  width: 50px;
+  padding: 0.2em;
+  margin: 0.2em;
+}
+
+.basket_items_ctn{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.checkout{
+  margin: 1em;
+}

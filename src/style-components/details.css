@@ -1,0 +1,27 @@
+.main_cont_dt{
+  display: flex;
+  margin-top: 10em;
+  padding: 0 5em 5em 5em;
+}
+
+.details_desc{
+  text-align: justify;
+}
+
+.main_cont_dt img{
+  object-fit: cover;
+  width: 100%;
+  margin-right: 5em;
+}
+
+.buttons{
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons button{
+  width: 15em;
+  margin: 0;
+  margin-top: 2em;
+  padding: 1em;
+}

@@ -1,0 +1,45 @@
+.slider{
+  display: flex;
+  align-items: center;
+  margin-top: 6em;
+  flex-direction: row;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.slide{
+  /*border: 1px solid red;*/
+  min-width: 100%;
+  position: relative;
+  height: 85vh;
+  transition: 0.5s ease;
+}
+
+.slide_img{
+  object-fit: cover;
+  width: 100%;
+  overflow-x: hidden;
+  height: 85vh;
+}
+
+.shop{
+  position: absolute;
+  left: 41.65%;
+  bottom: 100px;
+}
+
+#goleft{
+  position: relative;
+    left: 45%;
+    bottom: 100px;
+    padding: 2em;
+    background: none;
+}
+
+#goright{
+  position: relative;
+    left: 45%;
+    bottom: 100px;
+    padding: 2em;
+    background: none;
+}

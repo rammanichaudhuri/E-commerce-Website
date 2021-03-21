@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+html, body{
+  /*background-image: radial-gradient(circle farthest-corner at 70% 40%, #fff4e6, #BC8F8F, #854442);*/
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+}
+h1{
+  text-align: center;
+  text-decoration: underline;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-weight: 700;
+  font-size: 2rem;
+  padding: 0.5em;
+}
+h2, p{
+  text-align: center;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+a{
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+nav{
+  display: block;
+  z-index:1; /*Add this*/
+  width:100%;
+  top: 0px;
+  position: fixed;
+}
+
+nav h3{
+  margin: 1em 2em;
+}
+
+.main_heading{
+}
+
+* {box-sizing:border-box}
+
+
+.item{
+  grid-area: 1/ 2/ 2/ 3;
+  justify-self: center;
+
+}
+
+.item img{
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+}
+
+.item button{
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  border: none;
+    cursor: pointer;
+    padding: 25px 80px;
+    display: inline-block;
+    margin: 15px auto;
+    margin-left: -120px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+}
+
+
+button{
+  transition: background-color 0.25s;
+}
+
+button a{
+  color: black;
+}
+
+.item a{
+  text-decoration: none;
+}
+
+button:hover, button:active {
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+button:hover > a, button:active > a {
+    color: #ffffff;
+}
+
+.ctg_grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 2em;
+}
+
+.image-item{
+  position: relative;
+  margin: 10px;
+}
+
+.image-item img{
+  object-fit: cover;
+  width: 100%;
+  height: 400px;
+}
+
+.image__img{
+
+}
+
+.image__overlay{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 98%;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  font-size: 1.8rem;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.image__overlay:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+
+.image__overlay > *{
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.image__overlay:hover > *{
+  transform: translateY(0px);
+}
+
+.favourites{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.favourites img{
+  object-fit: cover;
+  width: 280px;
+  height: 280px;
+}
+
+.fav{
+  position: relative;
+  margin: 1em;
+}
+
+
+.fav__overlay{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.fav:hover > *{
+  opacity: 1;
+  cursor: pointer;
+}
+
+.fav__overlay > *{
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.fav:hover > .fav__overlay > *{
+  transform: translateY(0px);
+}
+
+
+.newsletter{
+  margin: 0 auto;
+}
+
+.newsletter h1{
+  margin-bottom: -20px;
+}
+
+.signup__block{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.signup__block > button{
+  border: none;
+  cursor: pointer;
+  padding: 20px 100px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin-top: 10px;
+  outline: none;
+  align-items: center;
+}
+
+
+#email{
+  border-radius: 30px;
+  border: 1px solid grey;
+  outline: none;
+  font-size: 14px;
+  padding: 16px 40px;
+  color: #cccccc;
+  width: 300px;
+  margin: 0.8em auto;
+  display: block;
+}
+
+footer{
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 2em;
+  padding: 2em;
+  background-color: #3c2f2f;
+  padding: 4em;
+  margin-top: 2em;
+}
+
+footer p{
+  font-size: 1rem;
+  margin: 0.5em;
+  text-decoration: none;
+  color: white;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+footer a{
+  text-decoration: none;
+  color: white;
+  padding: 0.5em;
+}
+
+footer a:hover{
+  color: #BC8F8F;
+  transition: color 0.25s;
+}
+
+.location{
+  display: flex;
+  flex-direction: column;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+}
+
+.about_us{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact_us{
+  display: flex;
+  flex-direction: column;
+}
+
+.copyrights p{
+  margin: 2em auto;
+  text-align: center;
+}
